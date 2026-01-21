@@ -15,6 +15,9 @@ body{
     padding: 16px 200px;
     background-color: #1A0B2E;
 }
+#nav-toggle{
+    display: none;
+}
 .navbar .logo{
     color: #FFFFFF;
 }
@@ -48,11 +51,6 @@ body{
     cursor: pointer;
     color: #ffffff;
     background:linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1));
-}
-.hamburger{
-    display: none;
-    width: 20px;
-    cursor: pointer;
 }
 .navbar,
 .menu,
@@ -562,18 +560,16 @@ footer{
         padding:16px 20px;
         display: flex;
     }
-    .menu{
-        display: none;
-    }
+    .menu,
     .subscribe-btn{
         display: none;
     }
+    #nav-toggle:checked ~ .menu,
+    #nav-toggle:checked ~ .subscribe-btn{
+        display: flex;
+    }
     .hamburger{
         display: block;
-    }
-    .hamburger img{
-        width: 20px;
-        height: 20px;
     }
     #banner{
         position: relative;
@@ -626,23 +622,21 @@ footer{
     .primary-btn,
     .second-btn{
         height: 40px;
-        font-size: 14px;
+        font-size: 1rem;
         padding: 8px 14px;
     }
     .about-section{
-        margin-top: 10px;
+        
+        margin-top: 30px;
         text-align: center;
         padding: 0 20px;
     }
     .about-section h1{
         font-size: 2rem;
-        line-height: 1.2;
     }
     .about-section p{
         font-size: 0.9rem;
         line-height: 1.3;
-    
-        
     }
     .about-frame{
         display: grid;
@@ -657,12 +651,12 @@ footer{
         font-size: 0.75rem;
     } 
     #grid-section{
-    padding:  30px 10px;
+        padding:  30px 10px;
     background: #2c1e57;
     }
     .grid-section{
-    grid-template-columns: 1fr;
-    gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
     .card-1{
             grid-column: span 3;
@@ -692,15 +686,15 @@ footer{
         
     }
     .episode-card{
-    border-radius: 20px;
-    width: 320px;
+        border-radius: 20px;
+        width: 320px;
     }
     .episode-video{
-    width: 100%;
+        width: 100%;
     }
     .episode-video iframe{
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
     }
 
     #meet-host{
@@ -731,17 +725,17 @@ footer{
         gap: 20px;
     }
     footer{
-        position: absolute;
-        height: fit-content;
+        position: relative;
+        height:20vh;
         background-image: url(images/footer-bg.png);
-        background-size:cover;
+        background-size:contain;
         background-repeat: no-repeat;
         background-position: center;
         align-items: center;
     }
     .footer-logo .logo{
         color: #FFFFFF;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center; 
         font-weight: 900;  
     }
@@ -751,7 +745,7 @@ footer{
         -webkit-text-fill-color: transparent;
     }
     .footer-content .social-icons {
-        gap: 10px;
+        gap: 5px;
         display: flex;
         flex-wrap: wrap;
     }
