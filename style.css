@@ -18,6 +18,9 @@ body{
 #nav-toggle{
     display: none;
 }
+.hamburger{
+    display: none;
+}
 .navbar .logo{
     color: #FFFFFF;
 }
@@ -124,7 +127,6 @@ body{
     border-radius: 20px;
     z-index: 5;
     animation: glowPulse 2s infinite ease-in-out;
-    /* box-shadow: 0 0 5px rgba(0,255,136,0.8), 0 0 10px rgba(0,255,136,0.6), 0 0 20px rgb(1, 13, 7); */
 }
 @keyframes glowPulse{
     0%{
@@ -257,7 +259,7 @@ hr{
 
 #grid-section{
     padding: 80px 120px;
-    background: #2c1e57;
+    background: #230E3D;
 }
 #grid-section h2{
     text-align: center;
@@ -272,7 +274,7 @@ hr{
 }
 .card-1{
     grid-row: span 2;
-    background: rgba(74, 27, 136, 0.9);
+    background: #351165;
     border-radius: 18px;
     padding: 30px;
     color: #FFF;
@@ -280,7 +282,7 @@ hr{
 }
 .card-2{
     grid-column: span 3;
-    background: rgba(74, 27, 136, 0.9);
+    background: #351165;
     border-radius: 18px;
     padding: 30px;
     color: #FFF;
@@ -288,7 +290,7 @@ hr{
 }
 .card-3{
     grid-column: span 3;
-    background: rgba(74, 27, 136, 0.9);
+    background: #351165;
     border-radius: 18px;
     padding: 30px;
     color: #FFF;
@@ -296,7 +298,7 @@ hr{
 }
 .card-4{
     grid-column: span 3;
-    background: rgba(74, 27, 136, 0.9);
+    background: #351165;
     border-radius: 18px;
     padding: 30px;
     color: #FFF;
@@ -304,7 +306,7 @@ hr{
 }
 .card-5{
     grid-column: span 1;
-    background: rgba(74, 27, 136, 0.9);
+    background: #351165;
     border-radius: 18px;
     padding: 30px;
     color: #FFF;
@@ -563,6 +565,7 @@ footer{
     .menu,
     .subscribe-btn{
         display: none;
+
     }
     #nav-toggle:checked ~ .menu,
     #nav-toggle:checked ~ .subscribe-btn{
@@ -570,6 +573,7 @@ footer{
     }
     .hamburger{
         display: block;
+        cursor: pointer;
     }
     #banner{
         position: relative;
@@ -652,7 +656,7 @@ footer{
     } 
     #grid-section{
         padding:  30px 10px;
-    background: #2c1e57;
+        background: #230E3D;
     }
     .grid-section{
         grid-template-columns: 1fr;
