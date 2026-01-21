@@ -323,11 +323,6 @@ hr{
     text-align: left;
     justify-content: left;
 }
-
-
-
-/* featured section */
-
 #featured-episodes h2{
     padding-top: 120px;
     text-align: center;
@@ -363,8 +358,6 @@ hr{
     height: 100%;
     display: block;
     border:0;
-    
-
 }
 .play-btn{
     position: absolute;
@@ -666,20 +659,52 @@ footer{
         font-size: 0.75rem;
     } 
     #grid-section{
-    padding: 0 10px;
+    padding:  30px 10px;
     background: #2c1e57;
+    }
+    .grid-section{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+    .card-1{
+            grid-column: span 3;
+    }
+    .card-2{
+        grid-column: span 3;
+    }
+    .card-3{
+        grid-column: span 3;
+    }
+    .card-4{
+        grid-column: span 3;
+    }
+    .card-5{
+        grid-column: span 3;
     }
     #grid-section h2{
         text-align: center;
-        padding-top: 30px;
-        font-size: 1.5rem;
-        white-space: nowrap;
-        color: #FFF;
+        padding-top: 20px;
+        font-size: 1.7rem;
+        margin-top: 20px;
     }
     .episodes-container{
         flex-direction: column;
-        padding: 0 20px;
+        padding: 10px 20px;
+        align-items: center;
+        
     }
+    .episode-card{
+    border-radius: 20px;
+    width: 320px;
+    }
+    .episode-video{
+    width: 100%;
+    }
+    .episode-video iframe{
+    width: 100%;
+    height: 100%;
+    }
+
     #meet-host{
         text-align: center;
         padding: 0 20px;
@@ -706,6 +731,9 @@ footer{
         align-items: center;
         margin-top: 10px;
         gap: 20px;
+    }
+    .footer-content{
+        align-items: center;
     }
     
 }
